@@ -25,6 +25,10 @@
                 Clicked="OnCheckClicked"
                 HorizontalOptions="Center" />
 
+        <Button Text="Open students list"
+        Clicked="OnOpenStudentsClicked"
+        HorizontalOptions="Center" />
+        
     </VerticalStackLayout>
 
 </ContentPage>
