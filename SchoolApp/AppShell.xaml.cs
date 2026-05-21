@@ -1,12 +1,10 @@
-﻿namespace SchoolApp;
-
-public partial class AppShell : Shell
+﻿namespace SchoolApp
 {
-    public AppShell()
+    public partial class AppShell : Shell
     {
-        InitializeComponent();
-
-        Routing.RegisterRoute(nameof(StudentsPage), typeof(StudentsPage));
-        Routing.RegisterRoute(nameof(StudentDetailPage), typeof(StudentDetailPage));
+        public AppShell()
+        {
+            InitializeComponent();
+        }
     }
 }

@@ -1,24 +1,25 @@
-namespace SchoolApp;
-
-[QueryProperty(nameof(StudentName), "name")]
-public partial class StudentDetailPage : ContentPage
+namespace SchoolApp
 {
-    public StudentDetailPage()
+    [QueryProperty(nameof(StudentName), "name")]
+    public partial class StudentDetailPage : ContentPage
     {
-        InitializeComponent();
-    }
-
-    public string StudentName
-    {
-        set
+        public StudentDetailPage()
         {
-            NameLabel.Text = value;
-            DetailsLabel.Text = $"Name has {value.Length} characters.";
+            InitializeComponent();
         }
-    }
 
-    private async void OnBackClicked(object sender, EventArgs e)
-    {
-        await Shell.Current.GoToAsync("..");
+        public string StudentName
+        {
+            set
+            {
+                NameLabel.Text = value;
+                DetailsLabel.Text = $"Name has {value.Length} characters.";
+            }
+        }
+
+        private async void OnBackClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("..");
+        }
     }
 }
