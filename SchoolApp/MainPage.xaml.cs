@@ -9,11 +9,12 @@ public partial class MainPage : ContentPage
         InitializeComponent();
     }
 
-    private void OnCheckClicked(object sender, EventArgs e)
+    private void OnTapClicked(object sender, EventArgs e)
     {
         _count++;
-        StatusLabel.Text = $"Button clicked: {_count} times";
+        StatusLabel.Text = $"Button pressed {_count} time(s).";
     }
+
     private async void OnOpenStudentsClicked(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync(nameof(StudentsPage));

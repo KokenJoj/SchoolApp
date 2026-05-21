@@ -1,5 +1,3 @@
-using System.Xml;
-
 namespace SchoolApp;
 
 [QueryProperty(nameof(StudentName), "name")]

@@ -8,11 +8,11 @@ public partial class StudentsPage : ContentPage
 
         StudentsList.ItemsSource = new[]
         {
-            "Dias Zholgali",
+            "Zholqali Dias",
+            "Salimov Alikhan",
             "Marat Gaukhar",
-            "Salimov ALikhan",
-            "Basiev David",
-            "Zholzhanov Alizhan"
+            "Erkinbek Eren",
+            "Bassiev David"
         };
     }
 
@@ -23,6 +23,7 @@ public partial class StudentsPage : ContentPage
         await Shell.Current.GoToAsync(
             $"{nameof(StudentDetailPage)}?name={Uri.EscapeDataString(name)}");
 
+      
         StudentsList.SelectedItem = null;
     }
 }

@@ -5,7 +5,7 @@
              Title="Students">
 
     <VerticalStackLayout Padding="20" Spacing="10">
-        <Label Text="Students" FontSize="24" />
+        <Label Text="Students List" FontSize="24" />
 
         <CollectionView x:Name="StudentsList"
                         SelectionMode="Single"
