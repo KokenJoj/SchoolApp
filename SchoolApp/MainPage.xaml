@@ -21,7 +21,19 @@
         <Button Text="Check"
                 Clicked="OnTapClicked"
                 HorizontalOptions="Center" />
+        <Label Text="Name card"
+                FontSize="22"
+                FontAttributes="Bold" />
 
+        <Entry Text="{Binding Name}"
+                Placeholder="Edit your name" />
+
+        <Label Text="{Binding Name}"
+                FontSize="20" />
+
+        <Label Text="{Binding City}"
+                FontSize="16"
+                TextColor="Gray" />
         <Button Text="Open students list"
                 Clicked="OnOpenStudentsClicked"
                 HorizontalOptions="Center" />
