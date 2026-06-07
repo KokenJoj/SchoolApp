@@ -1,4 +1,5 @@
-﻿using SchoolApp.ViewModels;
+using SchoolApp.ViewModels;
+
 namespace SchoolApp;
 
 public partial class MainPage : ContentPage
@@ -11,13 +12,13 @@ public partial class MainPage : ContentPage
         BindingContext = new Person();
     }
 
-    private void OnTapClicked(object sender, EventArgs e)
+    private void OnTapClicked(object? sender, EventArgs e)
     {
         _count++;
         StatusLabel.Text = $"Button pressed {_count} time(s).";
     }
 
-    private async void OnOpenStudentsClicked(object sender, EventArgs e)
+    private async void OnOpenStudentsClicked(object? sender, EventArgs e)
     {
         await Shell.Current.GoToAsync(nameof(StudentsPage));
     }
