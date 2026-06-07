@@ -1,4 +1,4 @@
-﻿using SchoolApp.ViewModels;
+using SchoolApp.ViewModels;
 
 namespace SchoolApp
 {
@@ -17,7 +17,8 @@ namespace SchoolApp
             count++;
             StatusLabel.Text = $"Button clicked: {count} times";
         }
-        private async void OnOpenStudentsClicked(object sender, EventArgs e)
+
+        private async void OnOpenStudentsClicked(object? sender, EventArgs e)
         {
             await Shell.Current.GoToAsync(nameof(StudentsPage));
         }
